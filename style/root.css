@@ -1,0 +1,578 @@
+html,body,div,ul,li,a,b,p
+{
+	margin:0;
+	padding:0;
+}
+
+body{
+ background:#eee;
+ font-size:14px;
+}
+
+/* INPUT */
+
+input.disabled{
+	background:#EFEFEF;
+	padding:2px 5px;
+	border:1px solid #EDEEF1;
+}
+
+input{
+	background:#FCFCFC;
+	padding:2px 5px;
+	border:1px solid #EFEFEF;
+	color:#BBBBBB;
+}
+
+input:focus{
+	background:#FFF;
+	padding:2px 5px;
+	border:1px solid #ccc;
+	color:#666;
+}
+
+input[type=button],
+input[type=submit],
+button
+{
+	background:#267EDF;
+	border:0px;
+	color:#FFF;
+	padding:5px 10px;
+	cursor:pointer;
+	margin-top:5px;
+}
+
+input[type=button]:hover,
+input[type=submit]:hover,
+button:hover
+{
+background:#2161CB;
+}
+
+
+.clear{
+	clear:both;
+	margin:0;
+	padding:0;
+	
+}
+
+.headline{
+	font-size:22px;
+	font-family:Tahoma;
+	margin:10px 20px;
+	
+}
+
+/* TOP PART -> LOGO & LOGIN*/
+#top-part{
+	width:950px;
+	margin:0 auto;
+	font-family:Verdana;
+	border:0px solid #fff;
+}
+
+#top-part > h1
+{
+	float:left;
+	color:#FF4000;
+}
+
+
+
+#top-part > #login
+{
+	float:right;
+	border:0px solid #ccc;
+	padding:7px 10px;
+	
+	max-width:500px;
+	min-width:60px;
+	width:60px;
+	height:14px;
+	margin-top:27px;
+	text-align:right;
+	background:#D90000;
+	color:#000;
+	overflow:hidden;
+	line-height:17px;
+}
+
+
+/* #top-part:hover > #login{ width:500px; padding-right:0px; line-height:14px;}*/
+#top-part > #login{ width:500px; padding-right:0px; line-height:14px;}
+
+#top-part > #login > #logged-user-pannel > a.logout{
+background:#7D0000;
+padding:10px 18px;
+}
+
+#top-part > #login > #logged-user-pannel > a{
+	color:#FFF;
+	text-decoration:none;
+	padding:10px 15px;
+	margin:0px;
+	
+}
+
+#top-part > #login > #logged-user-pannel > a:hover{
+	background:#B90000;
+}
+
+/* WRAPPER & MENU */
+#wrapper{
+	width:950px;
+	background:#FFFFFF;
+	margin:0 auto;
+	min-height:500px;
+}
+
+#wrapper >  #menu{
+	background:#FFA64C;
+}
+
+#wrapper >  #menu > ul{
+ list-style:none;
+  float:left;
+  font-family:Tahoma;
+}
+
+#wrapper >  #menu > ul > li{
+	float:left;
+	padding:10px 0px;
+}
+
+#wrapper >  #menu > ul > li > a{
+ color:#888;
+ text-decoration:none;
+ border-right:0px solid #ccc;
+ padding:10px 15px;
+ border:1px solid transparent;
+
+}
+
+#wrapper >  #menu > ul > li > a:hover{
+background:#813101;
+color:#fff;
+border:1px solid #813101;
+border-bottom:0px;
+box-shadow: inset 0 1px 3px #000;
+}
+
+/*
+	Colums
+*/
+#left-col{
+	float:left;
+	width:700px;
+	background:#fff;
+}
+
+#left-col  a{
+	color:#265CFF;
+	text-decoration:none;
+}
+
+#left-col  a:hover{
+	color:#2161CF;
+}
+
+#right-col{
+	float:left;
+	width:250px;
+	background:#ccc;
+}
+
+#right-col  a{
+	color:#FF8000;
+	text-decoration:none;
+}
+
+#right-col  a:hover{
+	color:#FF4000;
+}
+
+/*
+	 PANELS 
+*/
+.panel{
+	background:#fff;
+}
+
+.panel > a {
+	 color:#2161CB;
+	 font-size:14px;
+	 text-decoration:none;
+}
+
+.panel > .title{
+	padding:10px;
+	color:#fff;
+	font-family:Tahoma;
+	background:#73B9FF;
+}
+
+
+.panel > .content{
+	padding:5px;
+	color:#666;
+	font-size:13px;
+	font-family:Tahoma;
+}
+
+/* SIDE BAR LOGIN PANEL -> LOGGED */
+#side-logged{}
+
+
+#side-logged > b{
+	margin:5px 0px;
+	color:#B32D00;
+	display:block;
+}
+
+
+#side-logged > a.info-block-element, 
+#side-logged > div.info-block-element
+{
+	 background:#FFF;
+	 padding:5px;
+	 color:#888;
+	 display:block;
+	 text-decoration:none;
+	 outline:0px;
+}
+
+#side-logged > a.info-block-element:hover, 
+#side-logged > div.info-block-element:hover
+{
+	color:#666;
+	background:#F7F7F7;
+}
+
+/* INDEX */
+#index-map{
+	 background: url("../images/map/MAP-DARK.jpg") center no-repeat;
+	/* background: url("../images/map/MAP-LIGHT.bmp") center no-repeat;*/
+	 background-size: 130%;
+	 height:460px;
+	 width:700px;
+	 
+	 box-shadow:0 2px 5px #666, inset 0 0px 1px #fff;
+}
+
+#index-map > #map-town-name-display{
+ background:rgba(0,0,0,0.4);
+ padding:10px 15px;
+ position:absolute;
+ color:#ccc;
+ text-shadow:1px 0px #000;
+ font-family:Tahoma;
+ font-size:12px;
+ margin-left:5px;
+ margin-top:5px;
+}
+
+#index-map  >  a { position:absolute;}
+#index-map  >  a > .point
+{
+	width:15px;
+	height:15px;
+	float:left;
+	border-radius:50%;
+	background:#fff;
+	margin-top:0px;
+	margin-left:0px;
+	 box-shadow:0 0px 3px #000;
+	
+}
+
+#index-map >  a > .point:hover{
+	background:#813101;
+	cursor:pointer;
+}
+
+
+#index-map > a > .point > .point-title
+{
+	 background:#fcfcfc;
+	 padding:7px 10px;
+	 color:#666;
+	 opacity:0.85;
+	 border:1px solid #ccc;
+	 position:absolute;
+	 margin-left:17px;
+	 margin-top:-5px;
+	 display:none;
+	 box-shadow:0 0px 5px #000;
+	 font-size:15px;
+	 font-family:Arial;
+	 
+	 
+}
+#index-map > a > .point > .point-title > small{
+	 color:darkred;
+	 display:block;
+	 font-size:9px;
+}
+
+
+#index-map  >  a > .point:hover > .point-title{
+	 display:block;
+}
+
+/* TABLES */
+table{ overflow:hidden; background:#FFF; max-width:700px;}
+table  tr td{
+	border-bottom:1px solid #efefef;
+}
+table  tr:first-child   td{
+	background:#73B9FF;
+	color:#FFF;
+	padding:10px 15px;
+}
+table  tr:hover{
+	background:#FFF7EF;
+}
+
+table  tr td{
+	color:#666;
+	text-align:center;
+	padding:5px;
+}
+
+/* PROGRESS BARR */
+.progressbar{
+	max-width:750px;
+	min-width:200px;
+	background:#fcfcfc;
+	padding:2px;
+	border:1px solid #ccc;
+	overflow:hidden;
+}
+.progressbar > div:first-child{
+	background:#E67800;
+	width:0%;
+	height:3px;
+	box-shadow:inset 0 0px 1px #FFF;
+}
+
+/* MSGS */
+.error-msg{
+	background:#FFD8D8;
+	color:#440404;
+	font-size:13px;
+	font-family:Tahoma;
+	padding:10px 15px;
+	
+}
+.warn-msg{
+	background:#D8E7FF;
+	background:#FDFFD8;
+	color:#042644;
+	color:#3D3306;
+	font-size:13px;
+	font-family:Tahoma;
+	padding:10px 15px;
+	
+}
+.ok-msg{
+	background:#E7FFD8;
+	color:#053A09;
+	font-size:13px;
+	font-family:Tahoma;
+	padding:10px 15px;
+	
+}
+
+/* LOTARY, TOTO & GIFTS INFO */
+.info{
+	background:#DDF0FF url("../images/lightbulb.png") left center no-repeat;
+	padding:5px 10px;
+	padding-left:40px;
+	font-family:Verdana;
+	font-size:11px;
+	color:#666;
+	display:block;
+}
+
+/* LOTARY */
+
+.slot-machine-input, .slot-machine-input:focus{
+	width:30px !important;
+	padding:25px 20px;
+	font-size:19px;
+	font-weight:bold;
+	text-align:center;
+	background:#FFF;
+	border:0px;
+	border-left:1px solid #666;
+}
+.slot-machine-input:first-child{ border-left:0px;}
+
+#success-lotary-msg{ 
+ background:#E6FFE0;
+ padding:5px 15px;
+ color:#666;
+ font-size:16px;
+ font-family:Verdana;
+ display:none;
+ margin-top:5px;
+ margin-bottom:5px;
+}
+
+#fuck-lotary-msg
+{
+background:#FFE0E0;
+ padding:5px 15px;
+ color:#666;
+ font-size:16px;
+ font-family:Verdana;
+ display:none;
+ margin-top:5px;
+ margin-bottom:5px;
+}
+#tryagain-lotary-msg
+{
+background:#E0F3FF;
+ padding:5px 15px;
+ color:#666;
+ font-size:16px;
+ font-family:Verdana;
+ display:none;
+ margin-top:5px;
+ margin-bottom:5px;
+}
+
+
+
+/* REGISTER / LOGIN  PAGE */
+.login-register-bg{
+	background: url("../images/index-scrached-bg.jpg") center no-repeat !important;
+	width:1007px;
+	height:865px;
+	overflow:hidden;
+
+}
+
+.poup-styled-box{
+	background:rgba(0,0,0,0.6);
+	background:rgba(255,255,255,0.9);
+	padding:10px 15px;
+	color:#666;
+	height:100%;
+	color:#000;
+	margin:0 auto;
+}
+
+.poup-styled-box form{
+	margin-left:30px;
+	margin-top:130px;
+	width:300px;
+	border:0px solid #ccc;
+	
+}
+.poup-styled-box form input{
+	padding:7px 10px;
+	width:300px;
+	color:#333;
+	background:#FFF;
+}
+
+/* TOTO / ТОТО */
+
+#user-form{
+	margin-top:30px;
+	border:0px solid #ccc;
+}
+
+#to-select-numbers-left{
+	display:block;
+	float:left;
+	margin-top:10px;
+	color:#2075B2;
+}
+
+#do-toto{
+	display:none;
+}
+
+#user-selected-numbers{
+	display:block;
+}
+
+#user-selected-numbers > div{
+	background:#FFF;
+	padding:5px 7px;
+	color:#666;
+	margin:5px;
+	float:left;
+}
+
+
+.blank-toto-number{
+	background:#FFF;
+	padding:5px 7px;
+	color:#666;
+	font-size:18px;
+	font-family:Tahoma;
+	margin:1px;
+	border:0px solid #ccc;
+	float:left;
+	cursor:pointer;
+}
+
+.blank-toto-number > input[type=checkbox].check{
+	 display:none;
+}
+
+#footer{
+	margin:20px;
+	font-size:16px;
+	color:#666;
+	text-align:center;
+}
+
+#footer > a {
+	 color:#3F7EE2;
+	 text-decoration:none;
+}
+
+#dynamic-pms-from-forum {
+    min-width: 200px;
+    background: #D83C3C;
+    position: fixed;
+    left: 5%;
+    bottom: 10%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #FF4C4C;
+	display:none;
+	cursor:pointer;
+}
+
+#dynamic-pms-from-forum  > b{
+  padding:5px;
+  background:#FF0000;
+  color:#FFFFFF;
+  font-family:Arial;
+  font-size:15px;
+  border-radius:3px;
+}
+
+#dynamic-pms-from-forum:hover{
+	 background: #660000;
+	 border: 1px solid #FF4C4C;
+	 color:#FFF;
+	 transition: 1s;
+}
+
+#dynamic-pms-from-forum > #close{
+	 float:right;
+	 color:#FFF;
+	 font-size:16px;
+	 padding-left:10px;
+	 font-weight:bold;
+	 font-family:Arial;
+	 cursor:pointer;
+}

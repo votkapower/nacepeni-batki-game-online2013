@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteRule ^confirm-acc$ 		./acc-confirm.php [L,QSA]
+RewriteRule ^login$ 			./login.php [L,QSA]
+RewriteRule ^register$ 			./register.php [L,QSA]

@@ -1,0 +1,1 @@
+<input type='text' name='search' placeholder='Име, място, ключова дума' /><button>Тест</button>
